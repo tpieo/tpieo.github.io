@@ -23,7 +23,15 @@ tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
 
 4. Add /usr/local/go/bin to the PATH environment variable.
 ```shell
+vi /etc/profile
+```
+Add the below cmd into the file.
+```shell
 export PATH=$PATH:/usr/local/go/bin
+```
+execute /etc/profile.
+```shell
+source /etc/profile
 ```
 
 5. Verify Go version
