@@ -36,5 +36,5 @@ go version
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
 <br>
-Reference: 
+Reference: <br>
 [https://go.dev/doc/install](https://go.dev/doc/install)
