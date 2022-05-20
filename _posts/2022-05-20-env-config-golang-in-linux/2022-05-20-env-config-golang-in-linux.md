@@ -1,7 +1,6 @@
 ---
 title: "env config: golang in linux"
-categories: ["golang"]
-tags: ["env config"]
+categories: ["golang", "env config"]
 ---
 
 All command use sudo or in su mode.

@@ -1,5 +1,6 @@
 ---
 title: "Golang: Connect Mysql"
+categories: ["golang"]
 ---
 
 # connect
