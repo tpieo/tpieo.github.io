@@ -1,5 +1,7 @@
 ---
 title: "env config: golang in linux"
+categories: ["golang"]
+tags: ["env config"]
 ---
 
 All command use sudo or in su mode.
@@ -33,3 +35,6 @@ go version
 ```shell
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
+<br>
+Reference: 
+[https://go.dev/doc/install](https://go.dev/doc/install)
