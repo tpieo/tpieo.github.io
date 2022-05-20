@@ -1,5 +1,5 @@
 ---
-title: Linux env variable
+title: Linux environment variable
 categories: ["Linux"]
 ---
 
