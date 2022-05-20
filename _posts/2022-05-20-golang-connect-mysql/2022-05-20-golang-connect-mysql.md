@@ -3,7 +3,7 @@ title: "Golang: Connect Mysql"
 categories: ["golang"]
 ---
 
-# connect
+# Connect
 ```go
 package main
 
@@ -22,20 +22,20 @@ func init() {
 	db, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/atguigudb")
 	if err != nil {
 		//check if the format is right, it won't check username and password
-		panic(fmt.Sprintln("sql.Open err:", err))
+		panic(err)
 	}
 	if err := db.Ping(); err != nil {
 		//check if username and password right
-		panic(fmt.Sprintln("db.Ping err:", err))
+		panic(err)
 	}
-	fmt.Println("connected")
+	fmt.Println("Connected")
 }
 
 func main() {
 	db.Close()
 }
 ```
-# select
+# Select
 ## QueryRow
 ```go
 // single result, Scan will close connection
@@ -67,7 +67,7 @@ if _, err := db.Exec(sql); err != nil {
 	fmt.Println(err)
 }
 ```
-# other
+# Other
 ```go
 db.SetMaxOpenConns(100)
 db.SetMaxIdleConns(10)
