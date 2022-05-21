@@ -1,9 +1,9 @@
 ---
-title: "Golang: Connect Mysql"
+title: "Golang: Mysql Operation"
 categories: ["golang"]
 ---
 
-# Connect
+## Connect
 ```go
 package main
 
@@ -35,15 +35,15 @@ func main() {
 	db.Close()
 }
 ```
-# Select
-## QueryRow
+## Select
+### QueryRow
 ```go
 // single result, Scan will close connection
 var m string
 sql := "select first_name from employees"
 db.QueryRow(sql).Scan(&m)
 ```
-## Query
+### Query
 ```go
 // multiple results, need rows.Close()
 var m string
@@ -60,14 +60,14 @@ for rows.Next() {
 }
 rows.Close()
 ```
-# Exec
+## Exec
 ```go
 sql := "insert into dept values (88, 88, 88);"
 if _, err := db.Exec(sql); err != nil {
 	fmt.Println(err)
 }
 ```
-# Other
+## Other
 ```go
 db.SetMaxOpenConns(100)
 db.SetMaxIdleConns(10)
