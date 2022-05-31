@@ -38,7 +38,7 @@ func main() {
 }
 ```
 ## Write bytes 
-O_TRUNC will create a new file to write (verse O_APPEND)
+O_TRUNC will create a new file to write (compared O_APPEND)
 ```go
 package main
 
@@ -47,7 +47,6 @@ import (
 )
 
 func main() {
-	// 可写方式打开文件
 	file, err := os.OpenFile(
 		"test.txt",
 		os.O_WRONLY|os.O_TRUNC|os.O_CREATE,
