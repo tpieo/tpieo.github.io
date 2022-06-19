@@ -9,8 +9,6 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
 The overall run time complexity should be O(log (m+n)).
 ```
 
-![](/_posts/2022-06-19-Median-of-Two-Sorted-Arrays/g1.png)
-
 ```cpp
 class Solution {
 public:
@@ -54,3 +52,6 @@ public:
     }
 };
 ```
+time: O(log(min(m, n)))
+
+space: O(1)
