@@ -3,10 +3,11 @@ title: "Golang: File operation"
 categories: ["Golang"]
 ---
 
-Assume error has been handled.<br> 
+Assume error has been handled.<br>
 Filename is **temp**, it is in the same directory.
 
 ## Read a file line by line
+
 ```go
 package main
 
@@ -37,8 +38,11 @@ func main() {
 	}
 }
 ```
-## Write bytes 
+
+## Write bytes
+
 O_TRUNC will create a new file to write (compared O_APPEND)
+
 ```go
 package main
 
